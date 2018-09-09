@@ -1,0 +1,24 @@
+{
+  "name": "innocodetestcite",
+  "version": "1.0.0",
+  "description": "myInnocodeProject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PK",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "angular-route": "^1.6.9",
+    "gulp": "^3.9.1"
+  }
+}
