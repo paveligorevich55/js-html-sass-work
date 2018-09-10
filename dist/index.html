@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="../dist/css/main.min.css">
+    <link rel="stylesheet" href="../dist/css/fonts.css">
 </head>
 <body ng-controller="CommentsCtrl">
 <header>
@@ -118,7 +119,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-11 offset-lg-1">
-                <div class="wrap">
+                <div class="wrap headingh3">
                     <h3>Leave comment:</h3>
                 </div>
             </div>
@@ -153,9 +154,9 @@
             </div>
             <div class="col-lg-9 ml-5 col-md-9 col-sm-9 col-8 content" >
                 <span class="pname">{{item.author.name}}</span>
-                <span class="pdate text-muted">{{item.created_at | date:'yyyy-MM-dd'}} at {{item.created_at | date:'h:mma'}}</span>
+                <span class="pdate text-muted"><i class="far fa-clock"></i>{{item.created_at | date:'yyyy-MM-dd'}} at {{item.created_at | date:'h:mma'}}</span>
                 <br>
-                <div class="content my-1">{{item.content}}</div>
+                <div class="pcontent my-1">{{item.content}}</div>
                 <ul class="list-inline d-flex text-muted">
                     <li><a href="" ng-click="openEditArea = !openEditArea"><span><i class="fas fa-edit"></i></span>Edit</a></li>
                     <li><a class="delete-comment" href="" ng-click="deleteComment(item.id)"><span><i class="fas fa-times pl-3"></i></span>Delete</a></li>
@@ -198,10 +199,10 @@
                     </div>
                     <div class="col-lg-10 col-md-8 col-sm-9 col-8  children-area">
                         <span class="pname-children text-muted">{{c.author.name}}</span>
-                        <span class="text-muted"><i class="fas fa-share"></i>{{item.author.name}}</span>
+                        <span class="text-muted pname-author"><i class="fas fa-share"></i>{{item.author.name}}</span>
                         <span class="pdate-children text-muted">{{c.created_at | date:'yyyy-MM-dd'}} at {{c.created_at | date:'h:mma'}}</span>
                         <br>
-                        <div class="content-children">{{c.content}}</div>
+                        <div class="pcontent-children">{{c.content}}</div>
                     </div>
                 </div>
             </div>
