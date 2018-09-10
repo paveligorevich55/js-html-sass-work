@@ -59,7 +59,7 @@ npm init
 ```
 Then You must writing a same data about your project in terminal/console
 
-Step 6 - creat a `gulpfile.js` near `packege.json`
+Step 6 - creat a `gulpfile.js` near `package.json`
 
 
 Now you have all to create your project! After configurate your gulpfile.js (See how to do it in `https://www.npmjs.com/package/gulp-install` for-local-use-with-gulp) You can use your last command `gulp` and work.
