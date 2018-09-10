@@ -199,8 +199,14 @@ src - it's working directory
 dist - it's prodaction version with app core (for using and testing).
 ```
 
-
-
+###### Header
+![](http://i.piccy.info/i9/999bdfd7ecf6cccfdba1384edaefd7b9/1536602248/225251/1268617/Snymok_ekrana_2018_09_10_v_20_54_49.jpg)
+###### Post New Comment
+![](http://i.piccy.info/i9/0502e8345f53297eb1687826a051f22b/1536602453/154057/1268617/Snymok_ekrana_2018_09_10_v_20_55_04.png)
+###### Edit comment
+![](http://i.piccy.info/i9/30d4534abb5a16a80662229af16e45ab/1536602741/76507/1268617/Snymok_ekrana_2018_09_10_v_20_55_58.png)
+###### Reply for a comment
+![](http://i.piccy.info/i9/a8e71449c1da1d82815e907bf57bd212/1536602653/78720/1268617/Snymok_ekrana_2018_09_10_v_20_55_38.png)
 
 
 
