@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="row" id="fourth-row">
-            <div class="col-lg-4 col-md-12 col-sm-12 col-12 pl-0">
+            <div class="col-lg-4 col-md-12 pr-md-0 pr-sm-0 col-sm-12 col-12 pl-0">
                 <div class="image-box">
                     <img src="image/3.png" alt="middle-img" class="img-fluid">
                 </div>
@@ -103,8 +103,8 @@
         </div>
         <div class="row" id="last-content-row">
             <div class="col-lg-10 offset-lg-1 col-12 col-sm-12 col-md-12">
-                <div class="content-info">
-                    <ul class="list-inline pt-3">
+                <div class="wrap content-info">
+                    <ul class="list-inline ">
                         <li class="text-muted"><i class="fas fa-user-alt"></i>Post by <strong>Will Smith</strong></li>
                         <li class="text-muted pl-3"><i class="far fa-clock"></i>Posted <strong><time>June 18, 2015</time></strong> at <strong><time>21:14</time></strong></li>
                         <li class="text-muted pl-3"><i class="fas fa-comment"></i><strong>12 comments</strong></li>
@@ -118,7 +118,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-11 offset-lg-1">
-                <div class="comments-heading">
+                <div class="wrap">
                     <h3>Leave comment:</h3>
                 </div>
             </div>
@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col-lg-1 offset-lg-1 col-md-2  col-sm-2 col-4">
                 <div class="profile-photo" ng-repeat="item in data | limitTo: 1">
-                    <img class="profile-img" src="{{item.author.avatar}}">
+                    <img class="profile-img" src="{{item.author.avatar}}" />
                 </div>
             </div>
             <div class="col-lg-10 col-md-9 col-sm-10 col-8">
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="col-lg-11 col-sm-10 offset-sm-1 offset-lg-1">
                 <div class="button-post-comment text-right">
-                    <button class="btn btn-warning text-muted" type="submit" id="send" ng-click="addComment(comment)">Send</button>
+                    <button class="btn btn-warning" type="submit" id="send" ng-click="addComment(comment)">Send</button>
                 </div>
             </div>
         </div>
@@ -152,8 +152,8 @@
                 </div>
             </div>
             <div class="col-lg-9 ml-5 col-md-9 col-sm-9 col-8 content" >
-                <span class="pname text-muted">{{item.author.name}}</span>
-                <span class="pdate text-muted">{{item.created_at | date:'MM/dd/yyyy At h:mma'}}</span>
+                <span class="pname">{{item.author.name}}</span>
+                <span class="pdate text-muted">{{item.created_at | date:'yyyy-MM-dd'}} at {{item.created_at | date:'h:mma'}}</span>
                 <br>
                 <div class="content my-1">{{item.content}}</div>
                 <ul class="list-inline d-flex text-muted">
@@ -162,8 +162,11 @@
                     <li><a class="replytocomment" ng-click="openReplyArea = !openReplyArea" href=""><span><i class="fas fa-reply pl-3"></i></span>Replay</a></li>
                 </ul>
                 <div class="row" ng-show="openEditArea">
-                    <div class="col-lg-8 offset-lg-1">
+                    <div class="col-lg-11 col-md-11 col-sm-10 col-8">
                         <div class="text-area-edit" >
+                            <button type="button" class="close text-muted" aria-label="Close" ng-click="openEditArea = !openEditArea">
+                                <span aria-hidden="true">&times;</span> Cancel
+                            </button>
                             <textarea name="post-edit" maxlength="255" id="post-edit" rows="3" cols="70" placeholder="" ng-model="item.content"></textarea>
                             <div class="col-lg-11 offset-lg-1">
                                 <div class="button-post-edit text-right">
@@ -174,9 +177,14 @@
                     </div>
                 </div>
                 <div class="row" ng-show="openReplyArea">
-                    <div class="col-lg-11 offset-lg-1">
-                        <div class="text-area-reply" >
+                    <div class="col-lg-11 col-md-11 col-sm-10 col-8">
+                        <div class="text-area-reply">
+                            <div class="wrap">
                             <span class="text-muted"><i class="fas fa-reply pr-2"></i>{{item.author.name}}</span>
+                            </div>
+                            <button type="button" class="close text-muted" aria-label="Close" ng-click="openReplyArea = !openReplyArea">
+                                <span aria-hidden="true">&times;</span> Cancel
+                            </button>
                             <textarea name="post-reply" maxlength="255" id="post-reply" rows="3" cols="70" placeholder="Your Message" ng-model="item.children.content"></textarea>
                             <div class="button-post-reply text-right">
                                 <button class="btn btn-warning text-muted reply" id="reply" ng-click="addReply(item)">Reply</button>
@@ -184,14 +192,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pb-3" ng-if="item.children.length > 0" ng-repeat="c in item.children">
+                <div class="row children-zone" ng-if="item.children.length > 0" ng-repeat="c in item.children">
                     <div class="col-lg-1 col-md-1 col-sm-1 col-1">
                         <img class="profile-img-children" src="{{c.author.avatar}}">
                     </div>
                     <div class="col-lg-10 col-md-8 col-sm-9 col-8  children-area">
                         <span class="pname-children text-muted">{{c.author.name}}</span>
-                        <span class="text-muted"><i class="fas fa-reply pl-2"></i>{{item.author.name}}</span>
-                        <span class="pdate-children text-muted">{{c.created_at | date:'MM/dd/yyyy At h:mma'}}</span>
+                        <span class="text-muted"><i class="fas fa-share"></i>{{item.author.name}}</span>
+                        <span class="pdate-children text-muted">{{c.created_at | date:'yyyy-MM-dd'}} at {{c.created_at | date:'h:mma'}}</span>
                         <br>
                         <div class="content-children">{{c.content}}</div>
                     </div>
@@ -199,8 +207,8 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center pb-3">
-        <button class="btn btn-danger" ng-click="loadMore(event)">LoadMore</button>
+    <div class="row justify-content-center button-load-more">
+        <button class="btn btn-light title" ng-click="loadMore(event)">LoadMore</button>
     </div>
 </section>
 
@@ -209,6 +217,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/main.js" ></script>
+<script src="../dist/js/scripts.min.js"></script>
 </body>
 </html>

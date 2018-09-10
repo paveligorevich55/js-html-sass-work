@@ -164,6 +164,9 @@
                 <div class="row" ng-show="openEditArea">
                     <div class="col-lg-11 col-md-11 col-sm-10 col-8">
                         <div class="text-area-edit" >
+                            <button type="button" class="close text-muted" aria-label="Close" ng-click="openEditArea = !openEditArea">
+                                <span aria-hidden="true">&times;</span> Cancel
+                            </button>
                             <textarea name="post-edit" maxlength="255" id="post-edit" rows="3" cols="70" placeholder="" ng-model="item.content"></textarea>
                             <div class="col-lg-11 offset-lg-1">
                                 <div class="button-post-edit text-right">
@@ -175,8 +178,13 @@
                 </div>
                 <div class="row" ng-show="openReplyArea">
                     <div class="col-lg-11 col-md-11 col-sm-10 col-8">
-                        <div class="text-area-reply" >
+                        <div class="text-area-reply">
+                            <div class="wrap">
                             <span class="text-muted"><i class="fas fa-reply pr-2"></i>{{item.author.name}}</span>
+                            </div>
+                            <button type="button" class="close text-muted" aria-label="Close" ng-click="openReplyArea = !openReplyArea">
+                                <span aria-hidden="true">&times;</span> Cancel
+                            </button>
                             <textarea name="post-reply" maxlength="255" id="post-reply" rows="3" cols="70" placeholder="Your Message" ng-model="item.children.content"></textarea>
                             <div class="button-post-reply text-right">
                                 <button class="btn btn-warning text-muted reply" id="reply" ng-click="addReply(item)">Reply</button>
@@ -190,7 +198,7 @@
                     </div>
                     <div class="col-lg-10 col-md-8 col-sm-9 col-8  children-area">
                         <span class="pname-children text-muted">{{c.author.name}}</span>
-                        <span class="text-muted"><i class="fas fa-reply pl-2"></i>{{item.author.name}}</span>
+                        <span class="text-muted"><i class="fas fa-share"></i>{{item.author.name}}</span>
                         <span class="pdate-children text-muted">{{c.created_at | date:'yyyy-MM-dd'}} at {{c.created_at | date:'h:mma'}}</span>
                         <br>
                         <div class="content-children">{{c.content}}</div>
@@ -200,7 +208,7 @@
         </div>
     </div>
     <div class="row justify-content-center button-load-more">
-        <button class="btn btn-danger title" ng-click="loadMore(event)">LoadMore</button>
+        <button class="btn btn-light title" ng-click="loadMore(event)">LoadMore</button>
     </div>
 </section>
 
@@ -209,6 +217,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="../dist/js/scripts.min.js" ></script>
+<script src="../dist/js/scripts.min.js"></script>
 </body>
 </html>
