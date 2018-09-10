@@ -29,7 +29,8 @@ npm install -g
 Step 1 - Installing node.js
 
 ```
-Going to https://nodejs.org/en/ 
+Going to https://nodejs.org/en/
+
 - and downloading a current version Node.js
 ```
 
@@ -143,23 +144,24 @@ gulp.task("default", ["html", "sass", "scripts", "img", "watch"]);
 
 How u can see - i have more then gulp and sass:
 
-`cssnano` - minificate your css file
-`autoprefixer` - set prefix `.min` or else to your filename
-`imagemin` - minificate your images
-`concat` - concat your files
-`uglify` - minificate your js files
-`rename` - rename your files
-`sass` - for compile your SASS to CSS
-
+```
+--cssnano - minificate your css file
+--autoprefixer - set prefix `.min` or else to your filename
+--imagemin - minificate your images
+--concat - concat your files
+--uglify - minificate your js files
+--rename - rename your files
+--sass - for compile your SASS to CSS
+```
 
 ## Versioning
-
+```
 AngularJS - v1.6.9
 Bootstrap - 4
 Font-awesome - latest
 Node.js - latest
 Gulp - latest
-
+```
 ## Authors
 
 * **Pavel Konchych** - *SelfDevelopment* - [paveligorevich55](https://github.com/paveligorevich55)
@@ -171,7 +173,7 @@ None
 
 ## Structure
 	
-	In this project i'll use GULP structure files
+##### In this project i'll use GULP structure files
 
 ```
 	|- src/
@@ -192,10 +194,10 @@ None
   |- package.json
   |- psd/
 ```
-
+```
 src - it's working directory
 dist - it's prodaction version with app core (for using and testing).
-
+```
 
 
 
