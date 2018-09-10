@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'StagThinItelic';
+    src: url('../fonts/StagThinItalic/Stag-ThinItalic.eot');
+    src: url('../fonts/StagThinItalic/Stag-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagThinItalic/Stag-ThinItalic.woff2') format('woff2'),
+        url('../fonts/StagThinItalic/Stag-ThinItalic.woff') format('woff'),
+        url('../fonts/StagThinItalic/Stag-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagLight';
+    src: url('../fonts/StagLight/Stag-Light.eot');
+    src: url('../fonts/StagLight/Stag-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagLight/Stag-Light.woff2') format('woff2'),
+        url('../fonts/StagLight/Stag-Light.woff') format('woff'),
+        url('../fonts/StagLight/Stag-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagSemiboldItalic';
+    src: url('../fonts/StagSemiBoldItelic/Stag-SemiboldItalic.eot');
+    src: url('../fonts/StagSemiBoldItelic/Stag-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagSemiBoldItelic/Stag-SemiboldItalic.woff2') format('woff2'),
+        url('../fonts/StagSemiBoldItelic/Stag-SemiboldItalic.woff') format('woff'),
+        url('../fonts/StagSemiBoldItelic/Stag-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagLightItalic';
+    src: url('../fonts/StagLightItalic/Stag-LightItalic.eot');
+    src: url('../fonts/StagLightItalic/Stag-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagLightItalic/Stag-LightItalic.woff2') format('woff2'),
+        url('../fonts/StagLightItalic/Stag-LightItalic.woff') format('woff'),
+        url('../fonts/StagLightItalic/Stag-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagBoldDot';
+    src: url('../fonts/StagBoldDot/Stag-BoldDot.eot');
+    src: url('../fonts/StagBoldDot/Stag-BoldDot.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBoldDot/Stag-BoldDot.woff2') format('woff2'),
+        url('../fonts/StagBoldDot/Stag-BoldDot.woff') format('woff'),
+        url('../fonts/StagBoldDot/Stag-BoldDot.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagBook';
+    src: url('../fonts/StagBook/Stag-Book.eot');
+    src: url('../fonts/StagBook/Stag-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBook/Stag-Book.woff2') format('woff2'),
+        url('../fonts/StagBook/Stag-Book.woff') format('woff'),
+        url('../fonts/StagBook/Stag-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagBoldItalic';
+    src: url('../fonts/StagBoldItalic/Stag-BoldItalic.eot');
+    src: url('../fonts/StagBoldItalic/Stag-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBoldItalic/Stag-BoldItalic.woff2') format('woff2'),
+        url('../fonts/StagBoldItalic/Stag-BoldItalic.woff') format('woff'),
+        url('../fonts/StagBoldItalic/Stag-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagMedium';
+    src: url('../fonts/StagMedium/Stag-Medium.eot');
+    src: url('../fonts/StagMedium/Stag-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagMedium/Stag-Medium.woff2') format('woff2'),
+        url('../fonts/StagMedium/Stag-Medium.woff') format('woff'),
+        url('../fonts/StagMedium/Stag-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagBlack';
+    src: url('../fonts/StagBlack/Stag-Black.eot');
+    src: url('../fonts/StagBlack/Stag-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBlack/Stag-Black.woff2') format('woff2'),
+        url('../fonts/StagBlack/Stag-Black.woff') format('woff'),
+        url('../fonts/StagBlack/Stag-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagBlackItelic';
+    src: url('../fonts/StagBlackItalic/Stag-BlackItalic.eot');
+    src: url('../fonts/StagBlackItalic/Stag-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBlackItalic/Stag-BlackItalic.woff2') format('woff2'),
+        url('../fonts/StagBlackItalic/Stag-BlackItalic.woff') format('woff'),
+        url('../fonts/StagBlackItalic/Stag-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagBookItalic';
+    src: url('../fonts/StagBookItalic/Stag-BookItalic.eot');
+    src: url('../fonts/StagBookItalic/Stag-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBookItalic/Stag-BookItalic.woff2') format('woff2'),
+        url('../fonts/StagBookItalic/Stag-BookItalic.woff') format('woff'),
+        url('../fonts/StagBookItalic/Stag-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagBold';
+    src: url('../fonts/StagBold/Stag-Bold.eot');
+    src: url('../fonts/StagBold/Stag-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagBold/Stag-Bold.woff2') format('woff2'),
+        url('../fonts/StagBold/Stag-Bold.woff') format('woff'),
+        url('../fonts/StagBold/Stag-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagSemiBold';
+    src: url('../fonts/StagSemiBold/Stag-Semibold.eot');
+    src: url('../fonts/StagSemiBold/Stag-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagSemiBold/Stag-Semibold.woff2') format('woff2'),
+        url('../fonts/StagSemiBold/Stag-Semibold.woff') format('woff'),
+        url('../fonts/StagSemiBold/Stag-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagMediumItalic';
+    src: url('../fonts/StagMediumItalic/Stag-MediumItalic.eot');
+    src: url('../fonts/StagMediumItalic/Stag-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagMediumItalic/Stag-MediumItalic.woff2') format('woff2'),
+        url('../fonts/StagMediumItalic/Stag-MediumItalic.woff') format('woff'),
+        url('../fonts/StagMediumItalic/Stag-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'StagThin';
+    src: url('../fonts/StagThin/Stag-Thin.eot');
+    src: url('../fonts/StagThin/Stag-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagThin/Stag-Thin.woff2') format('woff2'),
+        url('../fonts/StagThin/Stag-Thin.woff') format('woff'),
+        url('../fonts/StagThin/Stag-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StagThinDot';
+    src: url('../fonts/StagThinDot/Stag-ThinDot.eot');
+    src: url('../fonts/StagThinDot/Stag-ThinDot.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/StagThinDot/Stag-ThinDot.woff2') format('woff2'),
+        url('../fonts/StagThinDot/Stag-ThinDot.woff') format('woff'),
+        url('../fonts/StagThinDot/Stag-ThinDot.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
