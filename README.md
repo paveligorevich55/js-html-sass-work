@@ -176,7 +176,7 @@ None
 ##### In this project i'll use GULP structure files
 
 ```
-	|- src/
+|- src/
       |- css/
       |- fonts/
       |- image/ 
