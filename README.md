@@ -172,7 +172,7 @@ None
 	
 	In this project i'll use GULP structure files
 
-`
+```
 	|- src/
       |- css/
       |- fonts/
@@ -190,7 +190,7 @@ None
   |- node_modules/
   |- package.json
   |- psd/
-`
+```
 
 src - it's working directory
 dist - it's prodaction version with app core (for using and testing).
