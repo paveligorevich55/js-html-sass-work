@@ -6,13 +6,14 @@ This is my comments project. Core files what's u must use for see how it's work 
 
 * For This project i'm using: 
 
-`-AngularJS - v1.6.9
+```
+-AngularJS - v1.6.9
 -Bootstrap - v4
 -Gulp(sass and others plugins)
 -HTML5
 -CSS3
 -FontAwesome
-`
+```
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
@@ -60,7 +61,7 @@ Then You must writing a same data about your project in terminal/console
 Step 6 - creat a `gulpfile.js` near `packege.json`
 
 
-Now you have all to create your project! After configurate your gulpfile.js (See how to do it in `https://www.npmjs.com/package/gulp-install#for-local-use-with-gulp`) You can use your last command `gulp` and work.
+Now you have all to create your project! After configurate your gulpfile.js (See how to do it in `https://www.npmjs.com/package/gulp-install` for-local-use-with-gulp) You can use your last command `gulp` and work.
 
 
 ### That is my configurate gulpfile.js
