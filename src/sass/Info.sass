@@ -1,0 +1,115 @@
+$semibold : "StagSemiBold"
+$book : "StagBook"
+$bold : "StagBold"
+$medium: "StagMedium"
+$margincontainer : 8.5%
+
+
+body
+  background-color: lightgrey 
+  
+  .heading-image
+    width: 100%
+    min-height: 400px
+    background: url("../image/2.png") no-repeat
+    background-size: 100% 100%
+    -moz-box-shadow: inset 0 -16px 170px 11px #000000
+    -webkit-box-shadow: inset 0 -16px 170px 11px #000000
+    box-shadow: inset 0 -16px 170px 11px #000000
+
+  #main
+    width: 70vw 
+    background: white
+    position: relative
+    left: 15% 
+    bottom: 80px
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.3)
+    .heading
+      display: flex
+      padding-top: 20px  
+      .img-star
+        padding: 0px
+        text-align: center
+        width: $margincontainer 
+
+        
+      .heading-h
+        border-bottom: 2px solid gainsboro
+        width: 83%   
+        
+        h1
+          font-family: $semibold
+          font-size: 30px 
+
+    .second-row
+     .date
+      margin-left: $margincontainer 
+      time
+        font-family: $medium
+        font-size: 15px
+        opacity: .4  
+
+    .third-row 
+      .text-box
+        text-align: justify
+        margin-right: $margincontainer
+        margin-left: $margincontainer
+        p
+          font-family: $book
+          font-size: 17px   
+
+    .fourth-row
+      display: flex
+      -webkit-justify-content: around 
+       justify-content: around  
+      .image-box
+        padding-left: 0px
+        padding-right: 0px
+        min-height: 250px
+        min-width: 385px   
+      img
+        border: 4px solid lightgrey
+        border-left: none
+        padding-right: 0px
+      .second-text-box
+        text-align: justify
+        padding-right: $margincontainer 
+        p
+          font-family: $book
+          font-size: 17px
+    .fiveth-row
+      margin-right: $margincontainer
+      margin-left: $margincontainer  
+      .third-text-box
+        text-align: justify
+        p
+          font-family: $book
+          font-size: 17px 
+    .last-content-row
+      margin-right: $margincontainer
+      margin-left: $margincontainer  
+      .content-info 
+        border: 1px solid gainsboro
+        border-left: none
+        border-right: none
+        padding-top: 10px 
+        ul
+          display: flex
+          flex-direction: row
+          flex-wrap: wrap
+          -webkit-align-items: center 
+          li
+            list-style: none;
+            display: inline-block
+            width: calc(100% / 3)
+            text-align: center
+            font-family: $book
+            font-size: 15px
+            
+
+
+
+
+
+
+
