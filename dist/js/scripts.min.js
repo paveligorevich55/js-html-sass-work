@@ -25,12 +25,15 @@ myApp.controller('CommentsCtrl', function($scope, $http) {
 //This is function for Delete a Comment from Page
 
     $scope.deleteComment = function(_id){
+        console.log(_id);
     $http({
         method : "DELETE",
         url : "http://frontend-test.pingbull.com/pages/paveligorevich55@icloud.com/comments/" + _id
-    }).then(function(response){
-        alert("Success!");
-    }, function(response){
+    }).then(function(data, index){
+        $scope.data.splice(index, 1);
+        console.log($scope.data.splice(index, 1));
+        // alert("Success!");
+    }, function(data, index){
         alert("Try Again");
     });
 };
@@ -50,7 +53,9 @@ myApp.controller('CommentsCtrl', function($scope, $http) {
                 'content' : comment.content
             }
         }).then(function(response){
-            alert("Success addint comment");
+            $scope.data.push(comment.content);
+            $scope.comment.content = null;
+            // alert("Success addint comment");
         }, function(response){
             alert("Failed adding");
         });
@@ -71,6 +76,8 @@ myApp.controller('CommentsCtrl', function($scope, $http) {
                 'content' : _id.children.content
             }
         }).then(function(response){
+            $scope.data.push(_id.children.content);
+            $scope.comment.content = null;
             alert("Success REPLY!");
         }, function(response){
             alert("Failed REPLY!");
