@@ -29,6 +29,8 @@ myApp.controller('CommentsCtrl', function($scope, $http) {
         method : "DELETE",
         url : "http://frontend-test.pingbull.com/pages/paveligorevich55@icloud.com/comments/" + _id
     }).then(function(response){
+        $scope.data.shift(_id);
+        console.log($scope.data.shift());
         alert("Success!");
     }, function(response){
         alert("Try Again");
@@ -50,6 +52,8 @@ myApp.controller('CommentsCtrl', function($scope, $http) {
                 'content' : comment.content
             }
         }).then(function(response){
+            $scope.data.push(comment.content);
+            $scope.comment.content = null;
             alert("Success addint comment");
         }, function(response){
             alert("Failed adding");
