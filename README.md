@@ -200,13 +200,13 @@ dist - it's prodaction version with app core (for using and testing).
 ```
 
 ###### Header
-![](http://i.piccy.info/i9/999bdfd7ecf6cccfdba1384edaefd7b9/1536602248/225251/1268617/Snymok_ekrana_2018_09_10_v_20_54_49.jpg)
+![](http://i.piccy.info/i9/b01d85c75a1f13169eee797689685edb/1537187666/228445/1268617/Snymok_ekrana_2018_09_17_v_15_22_09.jpg)
 ###### Post New Comment
-![](http://i.piccy.info/i9/0502e8345f53297eb1687826a051f22b/1536602453/154057/1268617/Snymok_ekrana_2018_09_10_v_20_55_04.png)
+![](http://i.piccy.info/i9/76c1bf7b0ef6f9335632c34ef472c65f/1537187574/143041/1268617/Snymok_ekrana_2018_09_17_v_15_22_24.png)
 ###### Edit comment
-![](http://i.piccy.info/i9/30d4534abb5a16a80662229af16e45ab/1536602741/76507/1268617/Snymok_ekrana_2018_09_10_v_20_55_58.png)
+![](http://i.piccy.info/i9/b63c367d21da754e3e4eba9ef8ee5cd3/1537187609/97050/1268617/Snymok_ekrana_2018_09_17_v_15_22_50.png)
 ###### Reply for a comment
-![](http://i.piccy.info/i9/a8e71449c1da1d82815e907bf57bd212/1536602653/78720/1268617/Snymok_ekrana_2018_09_10_v_20_55_38.png)
+![](http://i.piccy.info/i9/95e38c5146b3b2cfc6a08e8c72153bce/1537187638/95507/1268617/Snymok_ekrana_2018_09_17_v_15_23_01.png)
 
 
 
